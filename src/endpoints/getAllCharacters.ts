@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { character } from "../types";
 import  connection  from "../connection";
-export default async function (
+export default async function getAllCharacters(
     req: Request,
     res: Response
 ):Promise<void> {
@@ -14,6 +14,6 @@ export default async function (
 
     res.send(characters)
    } catch (error) {
-    res.status(500).send("deu erro")
+    res.status(500).send("deu ruim")
    }
  }

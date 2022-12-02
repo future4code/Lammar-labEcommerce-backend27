@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const connection_1 = __importDefault(require("../connection"));
-function default_1(req, res) {
+function getAllCharacters(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const name = req.query;
@@ -21,9 +21,9 @@ function default_1(req, res) {
             res.send(characters);
         }
         catch (error) {
-            res.status(500).send("deu erro");
+            res.status(500).send("deu ruim");
         }
     });
 }
-exports.default = default_1;
+exports.default = getAllCharacters;
 //# sourceMappingURL=getAllCharacters.js.map

@@ -1,9 +1,19 @@
 import { Request, Response } from "express";
-import { characters } from "../data";
-
-export default function(
+import { character } from "../types";
+import  connection  from "../connection";
+export default async function (
     req: Request,
     res: Response
-):void {
+):Promise<void> {
+   try {
+    const name = req.query
+
+    const characters: character[] = await connection("character")
+
+
+
     res.send(characters)
+   } catch (error) {
+    res.status(500).send("deu erro")
+   }
  }

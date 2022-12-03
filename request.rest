@@ -1,4 +1,4 @@
-GET http://localhost:3003/character?name=Deadpool
+GET http://localhost:3003/character?name=x&orderType=DESC
 ###
 PUT http://localhost:3003/character
 Content-Type: application/json
@@ -11,4 +11,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3003/character/1669853423867
+DELETE http://localhost:3003/character/3

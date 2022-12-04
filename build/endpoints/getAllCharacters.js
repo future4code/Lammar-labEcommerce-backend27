@@ -23,6 +23,7 @@ function getAllCharacters(req, res) {
                 .where("name", "LIKE", `%${name}%`)
                 .orderBy(orderBy || "name", orderType)
                 .offset(offset);
+            debugger;
             res.send(characters);
         }
         catch (error) {

@@ -1,4 +1,4 @@
-GET http://localhost:3003/character?name=x&orderType=DESC
+GET http://localhost:3003/character?name=a&orderType=DESC
 ###
 PUT http://localhost:3003/character
 Content-Type: application/json

@@ -1,7 +1,7 @@
 import express, {Express} from "express"
 import cors from "cors"
 import dotenv from "dotenv"
-
+import { AddressInfo } from "net"
 dotenv.config();
 
 const app: Express = express()
@@ -10,8 +10,15 @@ const app: Express = express()
 app.use(express.json())
 app.use(cors())
 
-app.listen(process.env.PORT || 3003, ()=>{
-    console.log(`Server ready! ${process.env.PORT || 3003}`)
-})
+
+
+const server = app.listen(process.env.PORT || 3000, () => {
+    if (server) {
+       const address = server.address() as AddressInfo;
+       console.log(`Server is running in http://localhost:${address.port}`);
+    } else {
+       console.error(`Failure upon starting server.`);
+    }
+ }) 
 
 export default app

@@ -13,7 +13,8 @@ const connection = (0, knex_1.default)({
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
         database: process.env.DB_SCHEMA,
-        port: 3000,
+
+
         multipleStatements: true
     }
 });

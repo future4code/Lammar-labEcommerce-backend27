@@ -1,6 +1,9 @@
-GET https://labecommerce-revisao-z5nq.onrender.com/character
+
+GET https://labecommerce-revisao-nbcl.onrender.com/character
 ###
-PUT https://labecommerce-revisao-z5nq.onrender.com/character
+PUT https://labecommerce-revisao-nbcl.onrender.com/character
+Content-Type: application/json
+
 
 {
     "name": "Mauricio",
@@ -11,3 +14,4 @@ PUT https://labecommerce-revisao-z5nq.onrender.com/character
 ###
 
 DELETE https://labecommerce-revisao-z5nq.onrender.com/character/3
+

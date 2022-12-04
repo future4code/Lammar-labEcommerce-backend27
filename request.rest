@@ -1,6 +1,6 @@
-GET http://localhost:3003/character?name=a&orderType=DESC
+GET https://labecommerce-revisao-nbcl.onrender.com/character
 ###
-PUT http://localhost:3003/character
+PUT https://labecommerce-revisao-nbcl.onrender.com/character
 Content-Type: application/json
 
 {
@@ -11,4 +11,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3003/character/3
+DELETE https://labecommerce-revisao-nbcl.onrender.com/3

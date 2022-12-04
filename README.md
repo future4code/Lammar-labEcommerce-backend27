@@ -1,5 +1,6 @@
 # labEcommerce-backend
-Deploy nao deu certo, fiz como o professor ensinou e deu erro, vcs que ensinem certo 
+```Deploy deu certo, mas como na aula dada de servicos no backend tambem nao consegui fazer funcionar corretamente```
 
 
 ### Coloque as informações do seu projeto, o link da documentação e o link deploy
+```https://labecommerce-revisao-nbcl.onrender.com/```
